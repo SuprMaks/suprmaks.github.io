@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_ef36f40af81b98405c3d2b38c874e472 {
+                #map_aa604f851ef223e6c192e19409e4d3cc {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -50,23 +50,27 @@
             </script>
 
         
+    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
 </head>
 <body>
     
     
-            <div class="folium-map" id="map_ef36f40af81b98405c3d2b38c874e472" ></div>
+            <div class="folium-map" id="map_aa604f851ef223e6c192e19409e4d3cc" ></div>
         
 </body>
 <script>
     
     
-            var map_ef36f40af81b98405c3d2b38c874e472 = L.map(
-                "map_ef36f40af81b98405c3d2b38c874e472",
+            var map_aa604f851ef223e6c192e19409e4d3cc = L.map(
+                "map_aa604f851ef223e6c192e19409e4d3cc",
                 {
-                    center: [46.85187248200101, 32.478192282588424],
+                    center: [47.21282894509749, 39.702852145814866],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 10,
+  "zoom": 8,
   "zoomControl": true,
   "preferCanvas": false,
 }
@@ -78,7 +82,7 @@
 
         
     
-            var tile_layer_f60ba19c88f5eb2270b162e7894d087f = L.tileLayer(
+            var tile_layer_c0389e13ce164a660550ef79eeb5c720 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -95,41 +99,395 @@
             );
         
     
-            tile_layer_f60ba19c88f5eb2270b162e7894d087f.addTo(map_ef36f40af81b98405c3d2b38c874e472);
+            tile_layer_c0389e13ce164a660550ef79eeb5c720.addTo(map_aa604f851ef223e6c192e19409e4d3cc);
         
     
-            var marker_e3d5f3fafec611125c54aefbe0b8e5df = L.marker(
-                [39.3046098572068, 51.71681348403555],
+            var marker_4d29b849914ceb84e2469c84c10e0367 = L.marker(
+                [55.839898, 37.486796],
                 {
 }
-            ).addTo(map_ef36f40af81b98405c3d2b38c874e472);
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
         
     
-            var marker_016424d2002a04a833a7eb6f3f11fd20 = L.marker(
-                [48.339077584247136, 40.3131633303906],
+            marker_4d29b849914ceb84e2469c84c10e0367.bindTooltip(
+                `<div>
+                     16.05 Водный стадион
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a29ccf13bf7607f7ae49f35848d535bc = L.marker(
+                [53.847829, 38.390483],
                 {
 }
-            ).addTo(map_ef36f40af81b98405c3d2b38c874e472);
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
         
     
-            var marker_410d5252cce2c4510c25e486f969c9ab = L.marker(
-                [47.21505951505469, 39.6988133023774],
+            marker_a29ccf13bf7607f7ae49f35848d535bc.bindTooltip(
+                `<div>
+                     16.05 Природно-антропогенный рекреационный комплекс Романцевские горы
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_824e3e3bbb8c379e33f8c7612c124018 = L.marker(
+                [52.622997, 38.500919],
                 {
 }
-            ).addTo(map_ef36f40af81b98405c3d2b38c874e472);
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
         
     
-            var marker_3a6350a4f562e094837af74f4dd6441a = L.marker(
-                [52.5487429714954, -1.81602098644987],
+            marker_824e3e3bbb8c379e33f8c7612c124018.bindTooltip(
+                `<div>
+                     16.05 Елец
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_f5fc63e1923faba3d4c4a8b3f4e603b1 = L.marker(
+                [52.367464, 38.770052],
                 {
 }
-            ).addTo(map_ef36f40af81b98405c3d2b38c874e472);
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
         
     
-            var poly_line_9d53bdba84e09a03141fddba15431f5b = L.polyline(
-                [[39.3046098572068, 51.71681348403555], [48.339077584247136, 40.3131633303906], [47.21505951505469, 39.6988133023774], [52.5487429714954, -1.81602098644987]],
+            marker_f5fc63e1923faba3d4c4a8b3f4e603b1.bindTooltip(
+                `<div>
+                     17.05 Кудыкина гора
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_c591fff7f1aefc55b4f0a263751de364 = L.marker(
+                [51.660859, 39.200287],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_c591fff7f1aefc55b4f0a263751de364.bindTooltip(
+                `<div>
+                     17.05 Воронеж
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_fd079e7e1983ea557e82c77f02974adf = L.marker(
+                [48.351318, 40.295234],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_fd079e7e1983ea557e82c77f02974adf.bindTooltip(
+                `<div>
+                     19.05 Лога
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_32ade33972f0f570d5f36e3458acc478 = L.marker(
+                [47.22229, 39.718835],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_32ade33972f0f570d5f36e3458acc478.bindTooltip(
+                `<div>
+                     20.05 Ростов-на-Дону
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_bae37b5e76056e167d5ca53a03a6f180 = L.marker(
+                [45.036159, 38.97537],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_bae37b5e76056e167d5ca53a03a6f180.bindTooltip(
+                `<div>
+                     Краснодар
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_351ac28e85a637586249daa5e6f7a4c7 = L.marker(
+                [45.356356, 36.467392],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_351ac28e85a637586249daa5e6f7a4c7.bindTooltip(
+                `<div>
+                     Крым, Керчь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_53ad6356115d71ec8cf3e86e14c13620 = L.marker(
+                [44.948573, 34.100377],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_53ad6356115d71ec8cf3e86e14c13620.bindTooltip(
+                `<div>
+                     Крым, Симферополь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6c6d581460dd2282aff704f4c1dbfe0e = L.marker(
+                [44.616158, 33.524476],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_6c6d581460dd2282aff704f4c1dbfe0e.bindTooltip(
+                `<div>
+                     Севастополь
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_0778a0c2de048c9574ce006b1d8fbf81 = L.marker(
+                [44.497462, 34.169508],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_0778a0c2de048c9574ce006b1d8fbf81.bindTooltip(
+                `<div>
+                     Крым, Ялта
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_a8adec8d20145fb79f11d5b10519cfbe = L.marker(
+                [44.810128, 37.439967],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_a8adec8d20145fb79f11d5b10519cfbe.bindTooltip(
+                `<div>
+                     Краснодарский край, озеро Сукко
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_087cfc2804431afb56965f38a95c3551 = L.marker(
+                [44.698631, 37.60303],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_087cfc2804431afb56965f38a95c3551.bindTooltip(
+                `<div>
+                     Новороссийск, село Абрау-Дюрсо
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_8d7d5baf3aabf2b75d4601433ceb61bc = L.marker(
+                [44.561018, 38.077115],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_8d7d5baf3aabf2b75d4601433ceb61bc.bindTooltip(
+                `<div>
+                     Краснодарский край, Геленджик
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_5fcd5988adf86f0a928ad4db9d1d5c21 = L.marker(
+                [44.09525, 39.073381],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_5fcd5988adf86f0a928ad4db9d1d5c21.bindTooltip(
+                `<div>
+                     Краснодарский край, Туапсе
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_72aa6ad79f2794a252c333ef64af215a = L.marker(
+                [44.606688, 40.105852],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_72aa6ad79f2794a252c333ef64af215a.bindTooltip(
+                `<div>
+                     Республика Адыгея, Майкоп
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_6dc25c04a2f45359bcc49241d9651f53 = L.marker(
+                [44.039811, 43.070644],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_6dc25c04a2f45359bcc49241d9651f53.bindTooltip(
+                `<div>
+                     Ставропольский край, Пятигорск
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_d0c7e0186321a004aa357c59360b2b15 = L.marker(
+                [43.485265, 43.607083],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_d0c7e0186321a004aa357c59360b2b15.bindTooltip(
+                `<div>
+                     Нальчик
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_84338f5e1b62fceb2da606c5611199a3 = L.marker(
+                [43.02462, 44.681769],
+                {
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            marker_84338f5e1b62fceb2da606c5611199a3.bindTooltip(
+                `<div>
+                     Республика Северная Осетия — Алания, Владикавказ
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_7970149409503460549919816941cd2d = L.polyline(
+                [[55.839898, 37.486796], [53.847829, 38.390483], [52.622997, 38.500919], [52.367464, 38.770052], [51.660859, 39.200287], [48.351318, 40.295234], [47.22229, 39.718835], [45.036159, 38.97537], [45.356356, 36.467392], [44.948573, 34.100377], [44.616158, 33.524476], [44.497462, 34.169508], [44.810128, 37.439967], [44.698631, 37.60303], [44.561018, 38.077115], [44.09525, 39.073381], [44.606688, 40.105852], [44.039811, 43.070644], [43.485265, 43.607083], [43.02462, 44.681769]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            poly_line_7970149409503460549919816941cd2d.bindTooltip(
+                `<div>
+                     Наш маршрут
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var poly_line_583588245edcbdf756e63fafb279b94e = L.polyline(
+                [[47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_ef36f40af81b98405c3d2b38c874e472);
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            poly_line_583588245edcbdf756e63fafb279b94e.bindTooltip(
+                `<div>
+                     GPS Трек
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            L.control.fullscreen(
+                {
+  "position": "topright",
+  "title": "Fullscreen",
+  "titleCancel": "EXT",
+  "forceSeparateButton": true,
+}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+        
+    
+            var locate_control_53b8003a3097034ead548d0640ff314a = L.control.locate(
+                {}
+            ).addTo(map_aa604f851ef223e6c192e19409e4d3cc);
+            
         
 </script>
 </html>
