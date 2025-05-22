@@ -1,23 +1,22 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_5dc89bd79309fc98f0b72077cc1e7a84 {
+<meta content="text/html; charset=utf-8" http-equiv="content-type"/>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css" rel="stylesheet"/>
+<meta content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<style>
+                #map_762d1e87d2c1f4d7031e95f00d94c9eb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -26,16 +25,14 @@
                 }
                 .leaflet-container { font-size: 1rem; }
             </style>
-
-            <style>html, body {
+<style>html, body {
                 width: 100%;
                 height: 100%;
                 margin: 0;
                 padding: 0;
             }
             </style>
-
-            <style>#map {
+<style>#map {
                 position:absolute;
                 top:0;
                 bottom:0;
@@ -43,34 +40,32 @@
                 left:0;
                 }
             </style>
-
-            <script>
+<script>
                 L_NO_TOUCH = false;
                 L_DISABLE_3D = false;
             </script>
-
-        
-    <script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css"/>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
-</head>
+<script src="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@3.0.0/Control.FullScreen.css" rel="stylesheet"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.js"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css" rel="stylesheet"/>
+<link href="/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+<link href="/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+<link href="/favicon/favicon.ico" rel="shortcut icon"/>
+<link href="/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+<link href="/favicon/site.webmanifest" rel="manifest"/></head>
 <body>
-    
-    
-            <div class="folium-map" id="map_5dc89bd79309fc98f0b72077cc1e7a84" ></div>
-        
+<div class="folium-map" id="map_762d1e87d2c1f4d7031e95f00d94c9eb"></div>
 </body>
 <script>
     
     
-            var map_5dc89bd79309fc98f0b72077cc1e7a84 = L.map(
-                "map_5dc89bd79309fc98f0b72077cc1e7a84",
+            var map_762d1e87d2c1f4d7031e95f00d94c9eb = L.map(
+                "map_762d1e87d2c1f4d7031e95f00d94c9eb",
                 {
-                    center: [47.21282894509749, 39.70285214581501],
+                    center: [47.21282894509748, 39.702852145814866],
                     crs: L.CRS.EPSG3857,
                     ...{
-  "zoom": 8,
+  "zoom": 12,
   "zoomControl": true,
   "preferCanvas": false,
 }
@@ -82,7 +77,7 @@
 
         
     
-            var tile_layer_7a88175b3c416c9117e1c6cc4768ef39 = L.tileLayer(
+            var tile_layer_bc7ceb1ffc448b7ac4f4b7548f948242 = L.tileLayer(
                 "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
                 {
   "minZoom": 0,
@@ -99,17 +94,17 @@
             );
         
     
-            tile_layer_7a88175b3c416c9117e1c6cc4768ef39.addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            tile_layer_bc7ceb1ffc448b7ac4f4b7548f948242.addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            var marker_acbfaac2eb5aad2fe5c0ac072ee68d55 = L.marker(
+            var marker_17b9aeb52316852672d4273017d5a1e5 = L.marker(
                 [55.839898, 37.486796],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_acbfaac2eb5aad2fe5c0ac072ee68d55.bindTooltip(
+            marker_17b9aeb52316852672d4273017d5a1e5.bindTooltip(
                 `<div>
                      16.05 Водный стадион
                  </div>`,
@@ -119,14 +114,14 @@
             );
         
     
-            var marker_2fbe03eb14ea91f7a30c3a4b44c9de57 = L.marker(
+            var marker_3f3282cbfa906f8e68f315d3079a2f50 = L.marker(
                 [53.847829, 38.390483],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_2fbe03eb14ea91f7a30c3a4b44c9de57.bindTooltip(
+            marker_3f3282cbfa906f8e68f315d3079a2f50.bindTooltip(
                 `<div>
                      16.05 Природно-антропогенный рекреационный комплекс Романцевские горы
                  </div>`,
@@ -136,14 +131,14 @@
             );
         
     
-            var marker_5578cfbfee3f252a60580bb41e4e9b48 = L.marker(
+            var marker_0c5b346d380bd6303c03aab6f2078b08 = L.marker(
                 [52.622997, 38.500919],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_5578cfbfee3f252a60580bb41e4e9b48.bindTooltip(
+            marker_0c5b346d380bd6303c03aab6f2078b08.bindTooltip(
                 `<div>
                      16.05 Елец
                  </div>`,
@@ -153,14 +148,14 @@
             );
         
     
-            var marker_8638c98ad547d2ae20c0193d98a1cbc7 = L.marker(
+            var marker_338167fa450e0daed53c4ae3bab0c28f = L.marker(
                 [52.367464, 38.770052],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_8638c98ad547d2ae20c0193d98a1cbc7.bindTooltip(
+            marker_338167fa450e0daed53c4ae3bab0c28f.bindTooltip(
                 `<div>
                      17.05 Кудыкина гора
                  </div>`,
@@ -170,14 +165,14 @@
             );
         
     
-            var marker_2ef291d610aa09709abf44a70a72cea5 = L.marker(
+            var marker_e2ec264ba5a8c1cdff8c656056fab339 = L.marker(
                 [51.660859, 39.200287],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_2ef291d610aa09709abf44a70a72cea5.bindTooltip(
+            marker_e2ec264ba5a8c1cdff8c656056fab339.bindTooltip(
                 `<div>
                      17.05 Воронеж
                  </div>`,
@@ -187,14 +182,14 @@
             );
         
     
-            var marker_2016aca35c3425bf3ed8c2d3c2563de7 = L.marker(
+            var marker_243b40ab627ad03df743cbeb2bcdb029 = L.marker(
                 [48.351318, 40.295234],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_2016aca35c3425bf3ed8c2d3c2563de7.bindTooltip(
+            marker_243b40ab627ad03df743cbeb2bcdb029.bindTooltip(
                 `<div>
                      19.05 Лога
                  </div>`,
@@ -204,14 +199,14 @@
             );
         
     
-            var marker_bac2d4f0c24e90097c5bdb1779cb5b6c = L.marker(
+            var marker_fb4dbf97d9a4dbd52bfe28ef00bddf03 = L.marker(
                 [47.22229, 39.718835],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_bac2d4f0c24e90097c5bdb1779cb5b6c.bindTooltip(
+            marker_fb4dbf97d9a4dbd52bfe28ef00bddf03.bindTooltip(
                 `<div>
                      20.05 Ростов-на-Дону
                  </div>`,
@@ -221,14 +216,14 @@
             );
         
     
-            var marker_09e435416b6ba7b4dc8f7c46408c2827 = L.marker(
+            var marker_36505cdda7c8acae1e80acce6708670a = L.marker(
                 [45.036159, 38.97537],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_09e435416b6ba7b4dc8f7c46408c2827.bindTooltip(
+            marker_36505cdda7c8acae1e80acce6708670a.bindTooltip(
                 `<div>
                      Краснодар
                  </div>`,
@@ -238,14 +233,14 @@
             );
         
     
-            var marker_a8ec5840336358dc9edad340c2b82146 = L.marker(
+            var marker_5e3bd6eb4ae7d362286cd36581c8ef64 = L.marker(
                 [45.356356, 36.467392],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_a8ec5840336358dc9edad340c2b82146.bindTooltip(
+            marker_5e3bd6eb4ae7d362286cd36581c8ef64.bindTooltip(
                 `<div>
                      Крым, Керчь
                  </div>`,
@@ -255,14 +250,14 @@
             );
         
     
-            var marker_bae9b051624daefa588970d43eb9003f = L.marker(
+            var marker_4a039ef9526be0d817496d3ba378f745 = L.marker(
                 [44.948573, 34.100377],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_bae9b051624daefa588970d43eb9003f.bindTooltip(
+            marker_4a039ef9526be0d817496d3ba378f745.bindTooltip(
                 `<div>
                      Крым, Симферополь
                  </div>`,
@@ -272,14 +267,14 @@
             );
         
     
-            var marker_492f428253a8fe67ace48e911b7266b2 = L.marker(
+            var marker_77a3780314f16fa2d585995266499ae5 = L.marker(
                 [44.616158, 33.524476],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_492f428253a8fe67ace48e911b7266b2.bindTooltip(
+            marker_77a3780314f16fa2d585995266499ae5.bindTooltip(
                 `<div>
                      Севастополь
                  </div>`,
@@ -289,14 +284,14 @@
             );
         
     
-            var marker_1d9147e9e6033d1c249446feb84de8ca = L.marker(
+            var marker_035ae0e1bbb5f6349fc6fe8d8cd3526d = L.marker(
                 [44.497462, 34.169508],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_1d9147e9e6033d1c249446feb84de8ca.bindTooltip(
+            marker_035ae0e1bbb5f6349fc6fe8d8cd3526d.bindTooltip(
                 `<div>
                      Крым, Ялта
                  </div>`,
@@ -306,14 +301,14 @@
             );
         
     
-            var marker_a0628070a30c406f41a6e5339af2a035 = L.marker(
+            var marker_ae7a4dba04e921fd49e707df7a606449 = L.marker(
                 [44.810128, 37.439967],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_a0628070a30c406f41a6e5339af2a035.bindTooltip(
+            marker_ae7a4dba04e921fd49e707df7a606449.bindTooltip(
                 `<div>
                      Краснодарский край, озеро Сукко
                  </div>`,
@@ -323,14 +318,14 @@
             );
         
     
-            var marker_6b700acfbf572741cfdbab5c3dfc10fb = L.marker(
+            var marker_ef358c0e4c3d5d786ba33eeee47330ee = L.marker(
                 [44.698631, 37.60303],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_6b700acfbf572741cfdbab5c3dfc10fb.bindTooltip(
+            marker_ef358c0e4c3d5d786ba33eeee47330ee.bindTooltip(
                 `<div>
                      Новороссийск, село Абрау-Дюрсо
                  </div>`,
@@ -340,14 +335,14 @@
             );
         
     
-            var marker_0be194002b4f0a32c14b0531044abe03 = L.marker(
+            var marker_37263ddd49b10012bce43a1137a26b66 = L.marker(
                 [44.561018, 38.077115],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_0be194002b4f0a32c14b0531044abe03.bindTooltip(
+            marker_37263ddd49b10012bce43a1137a26b66.bindTooltip(
                 `<div>
                      Краснодарский край, Геленджик
                  </div>`,
@@ -357,14 +352,14 @@
             );
         
     
-            var marker_8290caeffe2339bdd820ee9e8f406d0c = L.marker(
+            var marker_e3f26d4c55065728cab12d76b5161a77 = L.marker(
                 [44.09525, 39.073381],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_8290caeffe2339bdd820ee9e8f406d0c.bindTooltip(
+            marker_e3f26d4c55065728cab12d76b5161a77.bindTooltip(
                 `<div>
                      Краснодарский край, Туапсе
                  </div>`,
@@ -374,14 +369,14 @@
             );
         
     
-            var marker_4f55adb4b808a3bc9d65bbee9ac0b941 = L.marker(
+            var marker_6d4287e08278081d0ef0e2ca35d20e11 = L.marker(
                 [44.606688, 40.105852],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_4f55adb4b808a3bc9d65bbee9ac0b941.bindTooltip(
+            marker_6d4287e08278081d0ef0e2ca35d20e11.bindTooltip(
                 `<div>
                      Республика Адыгея, Майкоп
                  </div>`,
@@ -391,14 +386,14 @@
             );
         
     
-            var marker_0105ae0fcaacfb3693c6de891b8f965e = L.marker(
+            var marker_e2365b01087a4c57f0ca8089d5fe1a63 = L.marker(
                 [44.039811, 43.070644],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_0105ae0fcaacfb3693c6de891b8f965e.bindTooltip(
+            marker_e2365b01087a4c57f0ca8089d5fe1a63.bindTooltip(
                 `<div>
                      Ставропольский край, Пятигорск
                  </div>`,
@@ -408,14 +403,14 @@
             );
         
     
-            var marker_e9949772f8fbae511b6753040cac0e09 = L.marker(
+            var marker_d3fe3dcd6d592987fbb5c337f63084b8 = L.marker(
                 [43.485265, 43.607083],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_e9949772f8fbae511b6753040cac0e09.bindTooltip(
+            marker_d3fe3dcd6d592987fbb5c337f63084b8.bindTooltip(
                 `<div>
                      Нальчик
                  </div>`,
@@ -425,14 +420,14 @@
             );
         
     
-            var marker_a52a38d6bd2dda6c53160175c005e815 = L.marker(
+            var marker_eedef8d177b7b11fe30870ff7dce396f = L.marker(
                 [43.02462, 44.681769],
                 {
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            marker_a52a38d6bd2dda6c53160175c005e815.bindTooltip(
+            marker_eedef8d177b7b11fe30870ff7dce396f.bindTooltip(
                 `<div>
                      Республика Северная Осетия — Алания, Владикавказ
                  </div>`,
@@ -442,13 +437,13 @@
             );
         
     
-            var poly_line_70b30258d0811054119e52a5b2e8ae9c = L.polyline(
+            var poly_line_8878272b81806498d9ecdb2add8ed3dd = L.polyline(
                 [[55.839898, 37.486796], [53.847829, 38.390483], [52.622997, 38.500919], [52.367464, 38.770052], [51.660859, 39.200287], [48.351318, 40.295234], [47.22229, 39.718835], [45.036159, 38.97537], [45.356356, 36.467392], [44.948573, 34.100377], [44.616158, 33.524476], [44.497462, 34.169508], [44.810128, 37.439967], [44.698631, 37.60303], [44.561018, 38.077115], [44.09525, 39.073381], [44.606688, 40.105852], [44.039811, 43.070644], [43.485265, 43.607083], [43.02462, 44.681769]],
                 {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            poly_line_70b30258d0811054119e52a5b2e8ae9c.bindTooltip(
+            poly_line_8878272b81806498d9ecdb2add8ed3dd.bindTooltip(
                 `<div>
                      Наш маршрут
                  </div>`,
@@ -458,13 +453,13 @@
             );
         
     
-            var poly_line_84933ee2e317bb83f5730812602baba7 = L.polyline(
-                [[47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866]],
+            var poly_line_04e929572cc75e6e7259d7ca4064f041 = L.polyline(
+                [[47.21282894509748, 39.702852145814866], [47.21282894509748, 39.702852145814866]],
                 {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            poly_line_84933ee2e317bb83f5730812602baba7.bindTooltip(
+            poly_line_04e929572cc75e6e7259d7ca4064f041.bindTooltip(
                 `<div>
                      GPS Трек
                  </div>`,
@@ -474,6 +469,37 @@
             );
         
     
+            var marker_4b2b020527016e272b80f7da081e6ea1 = L.marker(
+                [47.21282894509748, 39.702852145814866],
+                {
+}
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
+        
+    
+            var icon_e9763f7acc57d1c6fb9526d04902d7a9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_4b2b020527016e272b80f7da081e6ea1.bindTooltip(
+                `<div>
+                     Последняя гео позиция
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4b2b020527016e272b80f7da081e6ea1.setIcon(icon_e9763f7acc57d1c6fb9526d04902d7a9);
+            
+    
             L.control.fullscreen(
                 {
   "position": "topright",
@@ -481,12 +507,12 @@
   "titleCancel": "EXT",
   "forceSeparateButton": true,
 }
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
         
     
-            var locate_control_61148b293df259b4ad0c51b21878288a = L.control.locate(
+            var locate_control_2cbc4dd073e44b2d549b4542fe03725a = L.control.locate(
                 {}
-            ).addTo(map_5dc89bd79309fc98f0b72077cc1e7a84);
+            ).addTo(map_762d1e87d2c1f4d7031e95f00d94c9eb);
             
         
 </script>
